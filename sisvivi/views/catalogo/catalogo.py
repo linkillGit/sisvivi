@@ -25,7 +25,6 @@ def catalogo() -> rx.Component:
         width="40%",
         padding_top=style.Spacer.BIG.value,
       ),
-      #spacing="2",
       wrap="wrap",
       justify = "center",
       width="100%",
@@ -34,5 +33,3 @@ def catalogo() -> rx.Component:
     margin_y=style.Spacer.BIG.value,
     width="100%",
   )
-
-

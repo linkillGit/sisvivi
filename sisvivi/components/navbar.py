@@ -1,5 +1,4 @@
 import reflex as rx
-
 import sisvivi.styles.styles as style
 
 def navbar() -> rx.Component:
@@ -28,4 +27,3 @@ def navbar() -> rx.Component:
     padding_y=style.Spacer.SMALL.value,
     z_index="999",
   )
-

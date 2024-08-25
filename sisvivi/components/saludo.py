@@ -49,5 +49,4 @@ def saludo() -> rx.Component:
     padding_x=style.Spacer.DEFAULT.value,
     padding_y=style.Spacer.BIG.value,
     align="center",
-    
   )

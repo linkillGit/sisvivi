@@ -5,7 +5,6 @@ import sisvivi.styles.styles as style
 def footer_item(text: str) -> rx.Component:
   return rx.text(text, size="3")
 
-
 def footer_items_1() -> rx.Component:
   return rx.flex(
     rx.heading(
@@ -42,7 +41,6 @@ def footer_items_3() -> rx.Component:
     text_align=["center", "center", "start"],
     flex_direction="column",
   )
-
 
 def footer() -> rx.Component:
   return rx.el.footer(

@@ -1,11 +1,7 @@
 import reflex as rx
 from enum import Enum
 
-# Constantes
-
-
-# Medidas
-
+#--->Medidas
 class Spacer(Enum):
   SMALL="0.5em"
   MEDIUM="0.8em"
@@ -13,8 +9,7 @@ class Spacer(Enum):
   BIG="2em"
   EXTRABIG="8EM"
 
-# Colores
-
+#--->Colores
 class Color(Enum):
   contraste_dia="#8e0242",
   contraste_noche="#ff0477",
@@ -22,8 +17,7 @@ class Color(Enum):
   fondo_dia="white",
   fondo_noche="#"
 
-# Estilos Base
-
+#--->Estilos Base
 BASE_STYLE = {
   rx.button: {
     "width": "100%",
@@ -53,5 +47,3 @@ button_tittle_style = dict(
 button_body_style = dict(
   font_size = Spacer.MEDIUM.value
 )
-
-#margin-block-start: 1em;
