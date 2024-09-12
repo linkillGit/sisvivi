@@ -1,7 +1,10 @@
 import reflex as rx
 
-#---> Común
+##############################
+######### UTILIDADES #########
+##############################
 
+#---> Común
 def lang() -> rx.Component:
   return rx.script("document.documentElement.lang='es'")
 
@@ -18,6 +21,3 @@ menu_description = "Catalogo de funciones"
 #---> Pag en construcción
 construction_title = "SISVIVI | En costrucción"
 construction_description = "Esta página es de pruebas o está en construcción"
-
-
-route="/"

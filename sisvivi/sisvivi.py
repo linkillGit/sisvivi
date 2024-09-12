@@ -11,7 +11,17 @@ from rxconfig import config
 #--->Estilos
 import sisvivi.styles.styles as style
 
-#--->Páginas
+##############################
+######### BACKEND ############
+##############################
+
+class State(rx.State):
+  """Define your app state here."""
+
+##############################
+######### PÁGINAS ############
+##############################
+
 from sisvivi.pages.index import index
 from sisvivi.pages.example import uno, dos, tres, cuatro
 

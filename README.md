@@ -17,3 +17,13 @@ Sistema de Visión Vehicular Inteligente
   >Documentacion de hosting para el fornt
 + https://docs.railway.app/
   >Documentacion de hosting para el back
++ https://docs.docker.com/manuals/
+  >Documentación de contenedor Docker
++ https://github.com/reflex-dev/reflex/tree/main/docker-example
+  >Ejemplo de configuración del contenedor Docker
++ 
+  >
++ 
+  >
++ 
+  >
