@@ -13,7 +13,7 @@ RUN mkdir -p /app/data /app/uploaded_files
 #--> Crea el entorno virtual
 ENV VIRTUAL_ENV=/app/.venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-RUN $uv venv
+RUN $uv .venv
 
 #--> Instalar requerimientos
 RUN pip install --upgrade pip
