@@ -21,6 +21,7 @@ RUN $uv venv
 #--> Instalar requerimientos
 RUN $uv pip install --upgrade pip
 RUN $uv pip install --no-cache-dir -r requirements.txt
+#RUN $uv pip install reflex==0.5.10
 
 #--> Prepara la aplicación
 RUN reflex init
@@ -37,4 +38,5 @@ COPY --chown=reflex --from=init /app /app
 STOPSIGNAL SIGKILL
 
 #--> Iniciar app en producción
-CMD reflex run --env prod --backend-only
+#CMD reflex run --env prod --backend-only
+CMD reflex run --env prod --backend-only --backend-port ${PORT:-8000}
