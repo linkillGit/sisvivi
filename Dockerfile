@@ -25,6 +25,14 @@ RUN $uv pip install --no-cache-dir -r requirements.txt
 #--> Prepara la aplicación
 RUN reflex init
 
+#--> Copia artefactos artefactoos de producción
+FROM python:3.11-slim
+WORKDIR /app
+
+#--> Crear usuario y directorio de trabajo
+RUN adduser --disabled-password --home /app reflex
+COPY --chown=reflex --from=init /app /app
+
 #--> Configurar palabra clave para cierre forzado
 STOPSIGNAL SIGKILL
 
