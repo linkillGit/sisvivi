@@ -2,21 +2,17 @@
 ####### IMPORTACIONES ########
 ##############################
 
-#--->Libreria principal
+#---> Libreria principal
 import reflex as rx
 
-#--->Configuraciones del reflex
+#---> Configuraciones del reflex
 from rxconfig import config
 
-#--->Estilos
+#---> Estilos
 import sisvivi.styles.styles as style
 
-##############################
-######### BACKEND ############
-##############################
-
-class State(rx.State):
-  """Define your app state here."""
+#---> Estados
+from sisvivi.api.api import get_repo_updated_at
 
 ##############################
 ######### PÁGINAS ############
@@ -35,3 +31,9 @@ app = rx.App(
     "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap",
   ],
 )
+
+##############################
+######### API_RUTAS ##########
+##############################
+
+app.api.add_api_route("/repos/{owner}/{repo}/updated_at",get_repo_updated_at)
